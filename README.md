@@ -97,9 +97,7 @@ Zen-AI combines emotional intelligence with modern AI techniques to deliver huma
 
 ---
 
-## 🌐 Live Demo
 
-🔗 **https://zenai-zeta.vercel.app/**
 
 ---
 

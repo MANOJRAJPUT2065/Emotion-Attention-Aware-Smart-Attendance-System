@@ -1,49 +1,115 @@
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[
-    node distance=1.8cm,
-    every node/.style={draw, rectangle, rounded corners, align=center, minimum width=3.2cm, minimum height=1cm},
-    arrow/.style={->, thick}
-]
+# 🧠 Reconnect: Rehabilitation Online with Zen-AI
 
-% Nodes
-\node (user) {User\\(Video / Audio / Text)};
-\node (webrtc) [below of=user] {WebRTC\\Real-Time Communication};
+Reconnect is an AI-powered mental health and emotional support platform designed to help individuals cope with stress, anxiety, and depression.  
+At its core is **Zen-AI**, an empathetic personal AI counselor that interacts through **voice, video, and text**, offering real-time emotional understanding and personalized support — while maintaining strict privacy and security.
 
-\node (frontend) [below of=webrtc] {Frontend\\React.js};
+---
 
-\node (backend) [below of=frontend] {Backend API\\Node.js + Express};
+## ✨ Key Highlights
 
-\node (ml) [right of=backend, xshift=4cm] {AI \& ML Engine\\Flask (Python)};
+- 🤖 **Zen-AI Personal Counselor**
+- 🎭 Multi-modal Emotion Detection (Face, Voice, Text)
+- 🎙️ Real-time Voice Interaction
+- 👥 Community Support & Healing Stories
+- 🔒 Privacy-first & Secure Design
+- ⚡ Real-time Communication with WebRTC
 
-\node (audio) [above of=ml] {Voice Emotion\\wav2vec2};
-\node (vision) [right of=audio] {Facial Emotion\\FaceAPI};
-\node (text) [below of=ml] {Text Emotion\\NLP};
+---
 
-\node (tts) [below of=text] {Voice Response\\Eleven Labs API};
+## 🧠 Zen-AI: Personal AI Counselor
 
-\node (db) [left of=backend, xshift=-4cm] {Database\\MongoDB};
+Zen-AI combines emotional intelligence with modern AI techniques to deliver human-like, empathetic interactions.
 
-\node (community) [below of=db] {Community Support\\Blogs \& Stories};
+### Capabilities
+- **Emotion Detection**
+  - Text: NLP-based sentiment & emotion analysis
+  - Voice: Emotional cues using `wav2vec2`
+  - Face: Facial emotion recognition using `FaceAPI`
+- **Voice Interaction**
+  - Natural, soothing AI voice powered by **Eleven Labs API**
+- **Empathetic Responses**
+  - Emotion-aware, personalized responses crafted from multi-modal inputs
 
-% Arrows
-\draw[arrow] (user) -- (webrtc);
-\draw[arrow] (webrtc) -- (frontend);
-\draw[arrow] (frontend) -- (backend);
+---
 
-\draw[arrow] (backend) -- (ml);
-\draw[arrow] (ml) -- (audio);
-\draw[arrow] (ml) -- (vision);
-\draw[arrow] (ml) -- (text);
+## 👥 Community Support
 
-\draw[arrow] (text) -- (tts);
-\draw[arrow] (tts) -- (backend);
+- 📢 **Support Network** – Connect with people facing similar challenges
+- 📝 **Success Stories & Blogs** – Read and share healing journeys
+- 🤝 **Collective Healing** – Build strength through shared experiences
 
-\draw[arrow] (backend) -- (db);
-\draw[arrow] (db) -- (community);
+---
 
-\draw[arrow] (backend) -- (frontend);
+## 🔐 Real-Time & Secure Communication
 
-\end{tikzpicture}
-\caption{Block Diagram of Reconnect: Rehabilitation Online with Zen-AI}
-\end{figure}
+- **WebRTC** for live audio & video interaction
+- Secure storage of user interactions
+- Personalized sessions while respecting user privacy
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js**
+- **JavaScript**
+- **WebRTC**
+
+### Backend
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- **Eleven Labs API**
+
+### Machine Learning (Python)
+- **wav2vec2** – Voice emotion recognition
+- **FaceAPI** – Facial emotion detection
+- **NLP Models** – Text emotion analysis
+- **Flask** – ML model serving
+
+---
+
+## ⚙️ System Workflow
+
+1. User interacts via video, audio, or text.
+2. WebRTC streams real-time data to the frontend.
+3. Backend forwards data to ML services.
+4. Emotion detection models analyze mental state.
+5. Zen-AI generates empathetic voice/text responses.
+6. Secure storage & optional community engagement.
+
+---
+
+## 🚧 Challenges Faced
+
+- Real-time emotion detection without latency
+- Accurate emotion understanding across cultures
+- Ethical handling of sensitive mental health data
+
+---
+
+## 🚀 Future Enhancements
+
+- 📱 Mobile application support
+- 🌍 Multilingual emotional understanding
+- 🧠 Improved emotion accuracy with larger datasets
+- 📊 Mental health progress analytics
+
+---
+
+## 🌐 Live Demo
+
+🔗 **https://zenai-zeta.vercel.app/**
+
+---
+
+## 👨‍💻 Authors
+
+- **Manoj Singh**
+- Built as a next-generation AI solution for emotional well-being and digital rehabilitation.
+
+---
+
+## 📜 License
+
+This project is for educational and research purposes.

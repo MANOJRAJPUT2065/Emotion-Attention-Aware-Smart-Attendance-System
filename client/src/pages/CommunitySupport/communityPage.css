@@ -1,0 +1,268 @@
+/* --- Community Page --- */
+.community-main-page {
+    display: flex;
+    background: radial-gradient(circle at center, #1a1a2e, #001346, #001c3d);
+    color: #ffffff;
+    font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+/* --- Sidebar --- */
+.side-bar {
+    width: 5%;
+    min-height: 100vh;
+    background: #202c33;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Sidebar Logo */
+.chat-logo {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.chat-logo-img {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    padding-top: 8px;
+    margin: 3px auto;
+    border: 1px solid white;
+    background: black;
+    cursor: pointer;
+}
+
+/* Channel Logos Section */
+.channels-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channels-logo-part {
+    height: 30px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.channels-logo-part:hover {
+    background-color: grey;
+}
+
+/* --- Chat Panel --- */
+.chat-panel {
+    width: 30%;
+    background: #111b21;
+    min-height: 90vh;
+    border-right: 0.01px solid rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* User List Item */
+.dm {
+    list-style: none;
+}
+
+.channel {
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #b0b0b0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.channel:hover {
+    background-color: #202c33;
+}
+
+.active {
+    background-color: #202c33;
+    color: #ffffff;
+}
+
+/* --- Chat Area --- */
+.chat-area {
+    width: 65%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: black;
+}
+
+/* Chat Header */
+.channel-details {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: rgb(176, 176, 176);
+    height: 9vh;
+    background: #202c33;
+}
+
+/* --- Search Box --- */
+.search-input {
+    padding: 8px;
+    margin: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+/* Dropdown for User Suggestions */
+.suggestions-dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #ccc;
+}
+
+.suggestions-dropdown .channel {
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+    background-color: #ccc;
+}
+
+.suggestions-dropdown .channel:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- Messages Section --- */
+.messages {
+    background: #111b21;
+    height: 82vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+    padding: 10px;
+}
+
+/* Hide Scrollbar for Webkit Browsers (Chrome, Safari, etc.) */
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual Message Styles */
+.message {
+    max-width: 60%;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.message.current-user {
+    background-color: #004654;
+    color: white;
+    margin: 3px 0;
+    margin-left: auto;
+    text-align: right;
+}
+
+.message.other-user {
+    background-color: #202c33;
+    color: white;
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Message Sender Name Styling */
+.user-name.current {
+    color: #06cf9c;
+}
+
+.user-name.other {
+    color: #53bdeb;
+}
+
+/* --- Input and Text Area --- */
+.text-area,
+.channel-details {
+    height: 9vh;
+    background: #202c33;
+}
+
+.text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    background-color: #2a3942;
+    box-sizing: border-box;
+    width: 55vw;
+    min-width: 0;
+    padding: 6px;
+    margin: 3px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    border: 1px solid #2a3942;
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    outline: none;
+}
+
+/* Timestamp Styling */
+.message-time {
+    font-size: 9px;
+    margin-right: -5px;
+    text-align: right;
+    color: rgb(174, 174, 174);
+}
+
+/* Send Button Styling */
+.send-button {
+    cursor: pointer;
+}
+
+/* Adjust padding for messages container */
+.messages {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Panel Header Styling */
+.panel-header {
+    background: none;
+}
+
+.community-navbar {
+    display: inline-flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 7px;
+    align-items: center;
+}
+
+.community-navbar>.logout-button>img {
+    height: 16px;
+    margin-right: 10px;
+}
+
+.community-navbar>.logout-button {
+    display: flex;
+    align-items: center;
+}

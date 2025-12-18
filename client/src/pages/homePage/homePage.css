@@ -1,0 +1,64 @@
+.home-page {
+  background: hsl(206, 51%, 9%);
+  font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+.home-content {
+  display: flex;
+  color: white;
+}
+
+.home-content-left,
+.home-content-2 {
+  width: 60vw;
+  padding: 20px 50px;
+  padding: 25px;
+  color: white;
+}
+
+.home-content-right {
+  width: 40vw;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #0b1822 100%), url('./trial3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  transition: background-position 1.5s ease-out;
+}
+
+.home-content-right:hover {
+  background-position: left center;
+}
+
+
+.head-line {
+
+  font-size: 80px;
+}
+
+.explain-home {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.home-zenai {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #333333;
+
+
+}
+
+.home-zenai:hover {
+  background-position: 0 0;
+  background-image: linear-gradient(270deg, rgb(107, 107, 230), #ffffff, rgb(107, 107, 230));
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 2s ease;
+}

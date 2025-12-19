@@ -1,113 +1,95 @@
-# 🧠 Reconnect: Rehabilitation Online with Zen-AI
+# 🧠 Emotion-Attention-Aware Smart Attendance System
 
-Reconnect is an AI-powered mental health and emotional support platform designed to help individuals cope with stress, anxiety, and depression.  
-At its core is **Zen-AI**, an empathetic personal AI counselor that interacts through **voice, video, and text**, offering real-time emotional understanding and personalized support — while maintaining strict privacy and security.
-
----
-
-## ✨ Key Highlights
-
-- 🤖 **Zen-AI Personal Counselor**
-- 🎭 Multi-modal Emotion Detection (Face, Voice, Text)
-- 🎙️ Real-time Voice Interaction
-- 👥 Community Support & Healing Stories
-- 🔒 Privacy-first & Secure Design
-- ⚡ Real-time Communication with WebRTC
+An AI-powered smart classroom system that automates attendance while analyzing **student emotions, attention, and engagement** in real time.  
+The system enhances classroom intelligence, prevents proxy attendance, and provides meaningful insights for teachers.
 
 ---
 
-## 🧠 Zen-AI: Personal AI Counselor
+## 🚀 Overview
 
-Zen-AI combines emotional intelligence with modern AI techniques to deliver human-like, empathetic interactions.
-
-### Capabilities
-- **Emotion Detection**
-  - Text: NLP-based sentiment & emotion analysis
-  - Voice: Emotional cues using `wav2vec2`
-  - Face: Facial emotion recognition using `FaceAPI`
-- **Voice Interaction**
-  - Natural, soothing AI voice powered by **Eleven Labs API**
-- **Empathetic Responses**
-  - Emotion-aware, personalized responses crafted from multi-modal inputs
+Traditional attendance systems only mark presence.  
+This project goes a step further by using **Computer Vision and Machine Learning** to evaluate **how attentive and engaged students are during class**.
 
 ---
 
-## 👥 Community Support
+## ✨ Features
 
-- 📢 **Support Network** – Connect with people facing similar challenges
-- 📝 **Success Stories & Blogs** – Read and share healing journeys
-- 🤝 **Collective Healing** – Build strength through shared experiences
+- 🧑‍🎓 Face Recognition–based Attendance
+- 🎭 Real-time Emotion Detection
+- 👀 Attention Monitoring (Eye Blink & Head Pose)
+- 🚫 Proxy Attendance Detection
+- 📊 Classroom Analytics Dashboard
+- ⚡ Real-time Processing
 
 ---
 
-## 🔐 Real-Time & Secure Communication
+## 🧠 AI Capabilities
 
-- **WebRTC** for live audio & video interaction
-- Secure storage of user interactions
-- Personalized sessions while respecting user privacy
+- Facial Emotion Recognition (Happy, Neutral, Sad, Sleepy)
+- Eye Blink Detection for attentiveness
+- Head Pose Estimation for distraction analysis
+- Face Embeddings using FaceNet
+- Attention & Engagement Scoring
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React.js**
-- **JavaScript**
-- **WebRTC**
+- React.js
+- JavaScript
+- Chart Libraries
 
 ### Backend
-- **Node.js**
-- **Express.js**
-- **MongoDB**
-- **Eleven Labs API**
+- Node.js
+- Express.js
+- MongoDB
 
-### Machine Learning (Python)
-- **wav2vec2** – Voice emotion recognition
-- **FaceAPI** – Facial emotion detection
-- **NLP Models** – Text emotion analysis
-- **Flask** – ML model serving
-
----
-
-## ⚙️ System Workflow
-
-1. User interacts via video, audio, or text.
-2. WebRTC streams real-time data to the frontend.
-3. Backend forwards data to ML services.
-4. Emotion detection models analyze mental state.
-5. Zen-AI generates empathetic voice/text responses.
-6. Secure storage & optional community engagement.
+### Machine Learning
+- Python
+- OpenCV
+- FaceNet
+- CNN Models
+- MediaPipe / Dlib
 
 ---
 
-## 🚧 Challenges Faced
+## ⚙️ Workflow
 
-- Real-time emotion detection without latency
-- Accurate emotion understanding across cultures
-- Ethical handling of sensitive mental health data
+1. Live video capture from classroom camera
+2. Face detection & recognition
+3. Emotion and attention analysis
+4. Proxy detection using behavioral patterns
+5. Attendance & analytics stored in database
+6. Insights visualized on dashboard
+
+---
+
+## 📊 Analytics Generated
+
+- Student-wise attention score
+- Distraction & sleep frequency
+- Attendance authenticity
+- Classroom engagement trends
+- Teacher effectiveness insights
 
 ---
 
 ## 🚀 Future Enhancements
 
-- 📱 Mobile application support
-- 🌍 Multilingual emotional understanding
-- 🧠 Improved emotion accuracy with larger datasets
-- 📊 Mental health progress analytics
+- Mobile application support
+- Multi-camera classrooms
+- Advanced emotion classification
+- AI-driven learning recommendations
 
 ---
 
+## 👨‍💻 Author
 
-
----
-
-## 👨‍💻 Authors
-
-- **Manoj Singh**
-- Built as a next-generation AI solution for emotional well-being and digital rehabilitation.
+**Manoj Singh**
 
 ---
 
 ## 📜 License
 
-This project is for educational and research purposes.
+This project is for educational and research purposes only.
